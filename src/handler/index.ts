@@ -8,4 +8,5 @@ export default [
     event_name: "ping",
     action: (socket: Socket) => PingHandler(socket),
   },
+  // more events...
 ] as Array<IEvents>;
