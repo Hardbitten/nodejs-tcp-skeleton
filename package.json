@@ -1,0 +1,23 @@
+{
+  "name": "userver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cls && tsc && node dist/index",
+    "dev": "cls && nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+    "dotenv": "^16.0.0",
+    "typescript": "^4.6.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/uuid": "^8.3.4"
+  }
+}
