@@ -28,7 +28,7 @@ const NewEventName = (socket: Socket) => {
 
   const response = {
     event_name: "NewEventName_Response",
-    data: { connection: true } as INewEventName,
+    data: { key: "name", value: "mahdi" } as INewEventName,
   } as IResponse;
 
   socket.write(JSON.stringify(response));
