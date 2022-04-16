@@ -15,10 +15,11 @@ export const server = createServer((socket) => {
     .on("end", () => onEnd(server, socket));
 }).on("connection", (socket: Socket) => onConnection(server, socket)) as Server;
 
-server.sockets = new Map<string, Socket>();
-
 export const Initilize = () => {
   server.listen(Number(process.env.PORT), () => {
     console.log("opened server on", server.address());
   });
 };
+
+// override socket property override and initilize
+import "./prototypes";
